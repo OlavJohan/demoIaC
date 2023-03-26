@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "env": {
+            "value": "bicep"
+        },
+        "staticWebAppParam": {
+            "value": {
+                "basename": "stapp-ifidemo",
+                "sku": "free",
+                "repository": "https://github.com/OlavJohan/demoiac-reactapp",
+                "branch": "main"
+            }
+        },
+        "appPlanParam": {
+            "value": {
+                "basename": "asp-ifidemo",
+                "sku": {
+                    "name": "F1"
+                }
+            }
+        },
+        "appServiceParam": {
+            "value": {
+                "basename": "app-ifidemo"
+            }
+        }
+    }
+}
