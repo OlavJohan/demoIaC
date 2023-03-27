@@ -38,3 +38,6 @@ terraform.rc
 
 # Ignore .lock.hcl created by terraform init
 *.lock.hcl
+
+# build output files
+*.zip
